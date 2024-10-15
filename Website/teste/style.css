@@ -1,0 +1,125 @@
+/* Estilo base para o corpo */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Estilo para o wrapper principal */
+.wrapper {
+  text-align: center;
+  background: #ffffff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Estilo do título principal */
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* Estilo para o texto que exibe o tempo */
+h2 {
+  font-size: 24px;
+  margin: 20px 0;
+  font-weight: 400;
+  color: #333;
+}
+
+h2 p {
+  display: inline;
+  font-weight: 700;
+}
+
+/* Estilo para os valores do cronômetro */
+span {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  padding: 0 4px;
+}
+
+/* Estilo dos botões */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #003f7f;
+  transform: translateY(0);
+}
+
+/* Diferenciação para o botão Stop */
+#button-stop {
+  background-color: #e74c3c;
+}
+
+#button-stop:hover {
+  background-color: #c0392b;
+}
+
+#button-stop:active {
+  background-color: #a93226;
+}
+
+/* Diferenciação para o botão Reset */
+#button-reset {
+  background-color: #f39c12;
+}
+
+#button-reset:hover {
+  background-color: #e67e22;
+}
+
+#button-reset:active {
+  background-color: #d35400;
+}
+
+/* Estilo responsivo */
+@media (max-width: 400px) {
+  .wrapper {
+    padding: 30px 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  span {
+    font-size: 28px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

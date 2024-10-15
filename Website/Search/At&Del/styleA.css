@@ -1,0 +1,145 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa; /* Tema claro */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px; /* Define uma largura máxima */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 900px; /* Define uma largura máxima para o formulário */
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra no formulário */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+fieldset {
+  border: none; /* Remove a borda ao redor dos fieldsets */
+  padding: 0;
+}
+
+legend {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+input[type="password"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra interna nos inputs */
+}
+
+input::placeholder,
+select {
+  color: #aaa;
+  font-style: italic;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button,
+a {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  flex: 1;
+  margin-left: 10px; /* Espaçamento lateral entre os botões */
+}
+
+button {
+  background-color: #28a745; /* Botão verde */
+}
+
+button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+a {
+  background-color: #dc3545; /* Botão vermelho */
+}
+
+a:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .button-group {
+    flex-direction: column;
+  }
+
+  button,
+  a {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0; /* Remove o espaçamento lateral em telas pequenas */
+  }
+}

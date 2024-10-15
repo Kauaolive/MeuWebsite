@@ -1,0 +1,164 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://plus.unsplash.com/premium_photo-1674834298045-e405bc99076b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Transparente */
+    padding: 20px;
+    text-align: center;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Espaçamento entre header e footer */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px; /* Espaço ao redor do formulário */
+    width: 100%;
+}
+
+/* Formulário centralizado e flutuante */
+form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 20px; /* Margens laterais */
+}
+
+/* Efeito de flutuação ao passar o mouse */
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+form legend {
+    font-size: 1.8rem;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+form input:focus {
+    outline: none;
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f8f8f8;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4A90E2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #357ABD;
+}
+
+form p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form a {
+    color: #007bff; /* Cor específica do link */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+form a:hover {
+    color: #0056b3; /* Escurece ao passar o mouse */
+    text-decoration: underline;
+}
+
+/* Footer simples e coerente com a página */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Transparência similar ao header */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+    z-index: 10;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #333;
+}
+
+footer a {
+    color: #007bff; 
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    form legend {
+        font-size: 1.5rem;
+    }
+}

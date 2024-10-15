@@ -1,0 +1,140 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e9ecef;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.deletar {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.deletar:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.deletar h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.deletar label {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.deletar input[type="text"],
+.deletar input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.deletar input[type="text"]::placeholder,
+.deletar input[type="password"]::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.deletar input[type="text"]:focus,
+.deletar input[type="password"]:focus {
+  outline: none;
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f8f8f8;
+}
+
+.deletar .button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.deletar button {
+  max-width: 450px;
+  padding: 20px 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 48%;
+}
+
+.deletar button:hover {
+  background-color: #218838;
+}
+
+.deletar a {
+  max-width: 450px;
+  padding: 15px 0;
+  border-radius: 8px;
+  background-color: #dc3545;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  width: 48%;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.deletar a:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 600px) {
+  .deletar {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .deletar label {
+    font-size: 16px;
+  }
+
+  .deletar input[type="text"],
+  .deletar input[type="password"] {
+    font-size: 14px;
+  }
+
+  .deletar button,
+  .deletar a {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .deletar .button-group {
+    flex-direction: column;
+  }
+
+  .deletar button,
+  .deletar a {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,71 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e9ecef;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pesquisa {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Efeito de "voo" ao passar o mouse */
+.pesquisa:hover {
+  transform: translateY(-5px); /* Levanta a caixa ligeiramente */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+
+.pesquisa label {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.pesquisa input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.pesquisa input[type="text"]::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Efeito ao focar no campo de input */
+.pesquisa input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.2); /* Aumenta a sombra interna ao focar */
+  background-color: #f8f8f8; /* Clareia o fundo ao focar */
+}
+
+@media (max-width: 600px) {
+  .pesquisa {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .pesquisa label {
+    font-size: 16px;
+  }
+
+  .pesquisa input[type="text"] {
+    font-size: 14px;
+  }
+}
